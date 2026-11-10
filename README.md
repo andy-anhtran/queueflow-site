@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# QueueFlow (`queueflow.cloud`)
 
-## Getting Started
+> Asynchronous Client Portal & Visual Task Queue for Design & Development Agencies
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16+-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Corporate Operator](https://img.shields.io/badge/Operator-Techy_Tinker,_LLC-10B981?style=flat-square)](https://queueflow.cloud)
+
+**QueueFlow** gives boutique design and development agencies an asynchronous client portal and Kanban queue. No hourly billables, no chaotic email threads—just strict 1-task WIP limits and automated flat-rate Stripe subscriptions.
+
+---
+
+## 🏛️ Corporate Operator & Compliance Details
+
+This repository hosts the official web presence, client-facing waitlist, and compliance disclosures for **QueueFlow**, operated by:
+
+- **Legal Entity:** Techy Tinker, LLC
+- **Jurisdiction:** Delaware, United States
+- **Entity Type:** Limited Liability Company (LLC)
+- **Primary Domain:** [queueflow.cloud](https://queueflow.cloud)
+- **Contact:** [support@queueflow.cloud](mailto:support@queueflow.cloud)
+- **Payment Architecture:** Stripe Billing & Subscriptions (PCI-DSS Level 1 compliant)
+
+---
+
+## 🚀 Key Features
+
+- **Strict WIP Concurrency:** Enforce 1-task concurrency limits per active client retainer to prevent scope creep.
+- **Automated Stripe Billing Sync:** Real-time webhook events pause or lock client workspace access if subscription charges fail or lapse.
+- **White-Label Client Portal:** Branded asynchronous portal where clients submit briefs, upload brand guidelines, and download deliverables.
+- **Underwriting Ready:** Embedded compliance modals and operator disclosures for Stripe Atlas, Stripe Live Mode, and Mercury Bank reviews.
+
+---
+
+## 🛠️ Local Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-org/queueflow-site.git
+cd queueflow-site
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Production Build
 
-## Learn More
+```bash
+# Compile optimized static bundle
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Start production server
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ⚡ Deployment to Vercel
 
-## Deploy on Vercel
+This repository is pre-configured for zero-config, 1-click imports on Vercel:
+1. Log in to [Vercel](https://vercel.com).
+2. Click **Add New Project** and select `queueflow-site`.
+3. Set the root directory to `./` (framework preset: Next.js).
+4. Click **Deploy**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚖️ License & Copyright
+
+© 2026 Techy Tinker, LLC. All rights reserved.
